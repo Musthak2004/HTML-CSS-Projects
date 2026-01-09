@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>Student Course Registration Form</h1>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <p>
+          <label>Student Name:</label><br />
+          <input type="text" name="student_name" />
+        </p>
+
+        <p>
+          <label>Email Address:</label><br />
+          <input type="email" name="email" />
+        </p>
+
+        <p>
+          <label>Phone Number:</label><br />
+          <input type="tel" name="phone" />
+        </p>
+
+        <p>
+          <label>Gender:</label><br />
+          <input type="radio" name="gender" value="Male" /> Male
+          <input type="radio" name="gender" value="Female" /> Female
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Details</legend>
+
+        <p>
+          <label>Select Course:</label><br />
+          <select name="course">
+            <option>Full Stack Development</option>
+            <option>Python Programming</option>
+            <option>Java Programming</option>
+            <option>Web Design</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Mode of Study:</label><br />
+          <input type="checkbox" name="mode" value="Online" /> Online
+          <input type="checkbox" name="mode" value="Offline" /> Offline
+        </p>
+
+        <p>
+          <label>Address:</label><br />
+          <textarea name="address" rows="4" cols="40"></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Register" />
+        <input type="reset" value="Clear" />
+      </p>
+    </form>
+  </body>
+</html>
