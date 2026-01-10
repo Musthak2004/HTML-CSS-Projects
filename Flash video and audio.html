@@ -1,0 +1,32 @@
+<!-- Example Flash, Video & Audio -->
+<!-- This example uses HTML% to show a video -->
+<!-- The video has been encoded in H264 and WebM formats to reach as
+    many browsers as possible. A Flash player has been added to the page
+    for browsers that do not support HTML5 video. The Flash player is
+    embedded using SWFObject. If the browser does not support HTML5
+    video or Flash, then a plain text message will be shown to the user. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flash, Video and Audio</title>
+    <script type="text/javascript" src="src="http://ajax.googleapis.com/ajax/libs/
+        swfobject/2.2/swfobject.js""></script>
+    <script type="text/javascript">var flashvars = {};
+        var params = {movie: "../video/puppy.flv"};
+        swfobject.embedSWF("flash/osplayer.swf", "snow", "400", "320", "8.0.0", flashvars, params);
+    </script>
+  </head>
+  <body>
+    <video src="images/dog.jpg" width="400" height="320" controls>
+        <source src="videos/videoplayback.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"''>
+        <source src="video/puppy.webm" type='video/webm;
+            codecs="vp8, vorbis"' />
+        <div id="snow">
+            <p>You cannot see this video of a puppy playing in the snow because this browser does not support our video formats.</p>
+        </div>
+    </video>
+  </body>
+</html>
