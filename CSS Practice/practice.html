@@ -1,17 +1,124 @@
-<p>
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci accusantium
-  atque suscipit incidunt! Reprehenderit cum porro ullam deleniti et quas
-  repudiandae sit, earum assumenda non adipisci ipsa doloremque sint ea
-  laudantium aliquid magnam facere accusantium iusto eaque delectus. Autem
-  placeat dolor laborum nihil, quae quam omnis illum voluptate amet debitis.
-</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<style>
-  p {
-    border: 5px solid #e80c7a;
-    padding: 20px;
-    width: 275px;
-    text-align: center;
-    border-radius: 10px;
-  }
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile Card Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* 1️⃣ Body Styles */
+      body {
+        background-color: #f0f4f8; /* Soft blue-grey background */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      /* 2️⃣ Container */
+      .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto; /* Centers the container */
+        text-align: center; /* Centers the inline-block cards */
+      }
+
+      /* 3️⃣ Card Styling (The Box) */
+      .card {
+        width: 280px;
+        background-color: white;
+        display: inline-block;
+        vertical-align: top; /* Keeps cards aligned at the top */
+        margin: 15px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        text-align: left;
+        transition: all 0.3s ease; /* Smooth animation for hover */
+      }
+
+      /* 4️⃣ Text Styling */
+      .card h2 {
+        color: #2c3e50;
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+      }
+
+      .course {
+        font-style: italic;
+        color: #e67e22; /* Orange accent */
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .desc {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #555;
+        height: 80px; /* Keeps card heights consistent */
+      }
+
+      /* 5️⃣ Button Style */
+      .btn {
+        display: block;
+        text-align: center;
+        background-color: #3498db;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 8px;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+
+      .btn:hover {
+        background-color: #2980b9;
+      }
+
+      /* 6️⃣ Hover Effects (Advanced) */
+      .card:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Adds depth */
+        transform: translateY(-10px); /* Lifts the card up */
+        border-color: #3498db;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: #2c3e50">Student Profiles</h1>
+
+    <div class="container">
+      <!-- Card 1 -->
+      <div class="card">
+        <h2>R.M. Musthak</h2>
+        <p class="course">CSE Engineering in AI</p>
+        <p class="desc">
+          Hello! I am a student at ESOFT Metro Campus, currently in my 1st year
+          of CSE Engineering. I am 21 years old.
+        </p>
+        <a href="mailto:musthak@gmail.com" class="btn">Contact Me</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <h2>Umama Farvin</h2>
+        <p class="course">Bsc in Biomedical Science</p>
+        <p class="desc">
+          I am a student at ICBT Campus, currently studying in my 2nd year of
+          Biomedical Science. I am 22 years old.
+        </p>
+        <a href="mailto:umama@gmail.com" class="btn">Contact Me</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <h2>New Student</h2>
+        <p class="course">Web Development</p>
+        <p class="desc">
+          I am learning HTML and CSS to build beautiful user interfaces and
+          modern web applications.
+        </p>
+        <a href="#" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </body>
+</html>
