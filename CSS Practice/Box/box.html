@@ -1,0 +1,67 @@
+<!-- Example Boxes -->
+<!-- In this example, you can see a simple homepage for a music shop -->
+<!-- The whole page sits inside a <div> element with an id of page. This is
+    centered using the margin property, with a value of auto for the left and
+    right margins. The logo and other content are centered using this same
+    technique.
+    
+    The main <div> has a double-lined border around it, and the size of
+    this box will expand and contract if the browser window is resized. To
+    prevent the page from becoming too narrow or too wide, the min-width
+    and max-width properties are used.
+    
+    The navigation is created using an unordered list. There are borders
+    set to the top and bottom of this list to make it stand out. The display
+    property has been applied to each of the items in the list so they behave
+    like inline (rather than block-level) elements. This enables the navigation
+    links to sit next to each other horizontally. The padding property has
+    been used to create space between each of the links.
+    
+    The width property for the <ul> element is set to 570 pixels, and the
+    width property for the <p> elements beneath them is set to 600 pixels.
+    They actually end up the same width as each other because the <ul>
+    element also uses padding to create a gap between the border of the box
+    it creates and the links inside of it, and any padding, borders, or margins
+    are added to the width and height of the box.
+    
+    If we had not included a DOCTYPE declaration at the start of this page,
+    the sizes of the boxes would be different to each other in Internet
+    Explorer 6 because this browser did not implement the box model in the
+    correct way. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boxes</title>
+    <link rel="stylesheet" href="box.css" />
+  </head>
+  <body>
+    <div id="page">
+      <div id="logo">
+        <img
+          src="./../../images/original-3fe4dfdc88b0c4794a6e8ca09571caf1.gif"
+          alt="The Analog Specialists"
+        />
+      </div>
+      <ul id="navigation">
+        <li><a href="#" class="on">Home</a></li>
+        <li><a href="#">For Sale</a></li>
+        <li><a href="#">Repairs</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p>
+        <img
+          src="./../../images/images.jpg"
+          alt="Fender Rhodes, Hohner Clavinet, and Wurlitzer EP200"
+        />
+      </p>
+      <p>
+        We specialise in the sales and repair of classic keyboards, in
+        particular the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.
+      </p>
+    </div>
+  </body>
+</html>
