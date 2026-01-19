@@ -1,9 +1,89 @@
+<!-- Example Images -->
+<!-- This example demonstrates how to use CSS to create a simple image gallery layout -->
+<!-- A background texture is applied to the whole page by repeating an
+    image with the texture behind the <body> element. A repeating
+    background image is sometimes referred to as wallpaper.
+    
+    The content of the page is put inside a <div> element whose class is
+    wrapper. This is used to fix the width of the page to 720 pixels. Its left
+    and right margins are set to auto to center it in the middle of the screen.
+    
+    The images sit inside an HTML5 <figure> element, and their captions
+    are provided in the <figcaption> element. CSS is used to set the
+    dimensions and background color for each <figure> element. The
+    dimensions of the images themselves are also set using CSS, and they
+    are given a single pixel gray border.
+    
+    For the captions, a background image is used to the left of the text. We
+    do not want this image to fill the background so we specify that it should
+    not repeat. Padding is used to the left of the text so that the words do
+    not go over the background image.
+    
+    Each of the <figure> elements is contained within a <div>, which has
+    two purposes. Firstly, it is used to create the three-column layout by
+    specifying a width and margins for the element and then floating it to
+    the left. Secondly, it adds a subtle shadow underneath each image. This
+    creates a three-dimensional appearance making it look like a piece of
+    card. To ensure that this sits underneath the image, the backgroundposition property is used. -->
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Images</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img
+          src="./../../images/title.jpg"
+          alt="Galerie Botanique"
+          width="456"
+          height="122"
+        />
+        <p>
+          Here is a selection of antique botanical prints held in our
+          collection.
+        </p>
+      </div>
+      <div class="entry">
+        <figure>
+          <img src="./../../images/helianthus.webp" alt="Helianthus" />
+          <figcaption>Helianthus</figcaption>
+        </figure>
+      </div>
+      <div class="entry">
+        <figure>
+          <img src="./../../images/palliflora.webp" alt="Passiflora" />
+          <figcaption>Passiflora</figcaption>
+        </figure>
+      </div>
+      <div class="entry">
+        <figure>
+          <img src="./../../images/nyctocolas.jpg" alt="Nyctocalos" />
+          <figcaption>Nyctocalos</figcaption>
+        </figure>
+      </div>
+      <div class="entry">
+        <figure>
+          <img src="./../../images/polianthes.jpg" alt="Polianthes" />
+          <figcaption>Polianthes</figcaption>
+        </figure>
+      </div>
+      <div class="entry">
+        <figure>
+          <img src="./../../images/ficus.webp" alt="Ficus" />
+          <figcaption>Ficus</figcaption>
+        </figure>
+      </div>
+      <div class="entry">
+        <figure>
+          <img src="./../../images/dendrobium.jpg" alt="Dendrobium" />
+          <figcaption>Dendrobium</figcaption>
+        </figure>
+      </div>
+    </div>
+  </body>
 </html>
